@@ -1,0 +1,38 @@
+Card
+    Atributos: minute, player, type, match
+    Métodos: getters y setters
+
+CoachingStaff
+    Atributos: name, birthDate, birthPlace, position, team
+    Métodos: getters y setters
+
+Goal
+    Atributos: minute, player, match
+    Métodos: getters y setters
+
+Match
+    Atributos: date, stadium, stage, attendance, goals, cards, referees
+    Métodos: addGoal(), addCard(), getters y setters
+
+Player
+    Atributos: name, birthDate, birthPlace, position, team
+    Métodos: getters y setters
+
+Referee
+    Atributos: name, birthDate, birthPlace, federation, position
+    Métodos: getters y setters
+
+Stadium
+    Atributos: name, capacity, city, hasRoof
+    Métodos: getters y setters
+
+Team
+    Atributos: name, country, players, coachingStaff
+    Métodos: addPlayer(), addCoachingStaff(), getters y setters
+
+Comunicación entre Objetos
+
+Un Match puede tener múltiples Goal, Card y Referee.
+Un Card y un Goal están relacionados con un Player y un Match.
+Un Player y CoachingStaff están asociados a un Team.
+Un Stadium es asociado a un Match.
